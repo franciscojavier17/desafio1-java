@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/normalize.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Introducción a JavaScript</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <section class="product-item">
+          <img src="https://nikeclprod.vteximg.com.br/arquivos/ids/471373-1000-1000/CU8047_102_A.jpg?v=637915064780870000" alt="Nike Academy">
+          <h1 class="product-name">Balon de Futbol Nike Academy</h1>
+          <div>
+            <h2>Precio unitario: $ <span id="price">52000</span></h2>
+            <input
+              type="text"
+              inputmode="numeric"
+              placeholder="Ingresar cantidad"
+              name=""
+              id="quantity"/>
+            <select name="" id="selectColor">
+              <option value="blue">Azul</option>
+              <option value="red">Rojo</option>
+              <option value="black">Negro</option>
+              <option value="green">Verde</option>
+            </select>
+          </div>
+          <div class="btn-container">
+            <buttton id="button">Calcule el total Aqui:</buttton>
+          </div>        
+        </section>
+        <section class="pricing-section">
+          <h2>Total: $ <span id="totalPrice">0</span></h2>
+          <h2 class="color-section">
+            Color:
+            <div id="color-circle"></div>
+          </h2>
+        </section>
+      </div>
+    </main>
+    <script src="assets/main.js"></script>
+  </body>
+</html>
